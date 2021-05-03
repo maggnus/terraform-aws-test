@@ -1,6 +1,10 @@
 terraform {
   required_providers {
     aws = {
+      # Error:
+      # Could not retrieve the list of available versions for provider hashicorp/aws:
+      # no available releases match the given constraints ~> 3.8.0, >= 2.0.*, >=
+      # 2.70.*, >= 3.22.0, >= 3.22.0, >= 3.22.0
       version = ">= 3.10.0"
     }
   }
