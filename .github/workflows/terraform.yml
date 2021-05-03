@@ -39,7 +39,7 @@ jobs:
         continue-on-error: true        
 
       - name: Select demo workspace
-        id: workspace
+        id: select
         run: terraform workspace select demo
         
       - name: Terraform Validate
