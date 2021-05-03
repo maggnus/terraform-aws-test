@@ -1,4 +1,12 @@
 terraform {
+  required_providers {
+    aws = {
+      version = ">= 3.10.0"
+    }
+  }
+}
+
+terraform {
   backend "s3" {
     // Singapore region
     region  = "ap-southeast-1"
