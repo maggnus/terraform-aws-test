@@ -18,3 +18,32 @@ These are the three modules we use:
 
 Please use these modules to complete the code.
 
+## Deployment guide
+
+1) Create `demo` workspace
+```
+terraform workspace new demo
+```
+2) Init Terraform modules
+```
+terraform init
+```
+3) Review and apply scripts
+```
+terraform plan
+terraform apply
+```
+4) Install `AWS` cli tool
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+5) Update kubeconfig
+```
+aws eks update-kubeconfig --name eks
+```
+6) Check if the cluster alive
+```
+kubectl get nodes
+```

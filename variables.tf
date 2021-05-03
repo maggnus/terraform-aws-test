@@ -13,6 +13,10 @@ variable "vpc_cidrs" {
   type = map(string)
 }
 
+variable "aws_availability_zones" {
+  type = list(string)
+}
+
 variable "aws_availability_zone_count" {
   type = map(number)
 }
