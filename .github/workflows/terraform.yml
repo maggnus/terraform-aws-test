@@ -28,15 +28,15 @@ jobs:
         id: fmt
         run: terraform fmt -check
         continue-on-error: true
-        
-      - name: Create demo workspace
-        id: workspace
-        run: terraform workspace new demo
-        
+             
       - name: Terraform Init
         id: init
         run: terraform init
 
+      - name: Create demo workspace
+        id: workspace
+        run: terraform workspace new demo        
+        
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
