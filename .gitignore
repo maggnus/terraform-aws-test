@@ -1,0 +1,4 @@
+_**
+.terraform
+kubeconfig_*
+backend.tf
