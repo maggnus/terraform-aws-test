@@ -35,7 +35,12 @@ jobs:
 
       - name: Create demo workspace
         id: workspace
-        run: terraform workspace new demo        
+        run: terraform workspace new demo
+        continue-on-error: true        
+
+      - name: Select demo workspace
+        id: workspace
+        run: terraform workspace select demo
         
       - name: Terraform Validate
         id: validate
